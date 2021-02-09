@@ -1,0 +1,131 @@
+* {
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.padre {
+  display: flex;
+  flex-flow: column nowrap;
+}
+  .header {
+    background: url("../../../../Archivos%20de%20trabajo/ISAIAS%20ALDHAIR%20GUTIERREZ%20VAZQUEZ/Evidencia%20Clase%202/Imagenes/bg-2.jpg");
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+    .menu {
+      background: rgba(0,0,0,.1);
+      display: flex;
+      flex-flow: row nowrap;
+      height: 100px;
+      align-items: center;
+      height: 100px;
+      border-bottom: 2px solid rgba(255,255,255,.5);
+    }
+      .logo {
+        color: #fff);
+      }
+      .logo a {
+        color: #fff;
+        font-size: 30px;
+      }
+      .logo a:hover {
+        color: #343434;
+      }
+      .nav {
+        
+        flex: 5 1 auto;
+      }
+        .nav a {
+          color: #fff;
+          font-size: 11px;
+          text-transform: uppercase;
+          padding: 0 10px;
+          letter-spacing: 2px;
+        }
+        .nav a:hover {
+          color: #343434;
+        }
+      .social {
+        flex: 1 1 auto;
+        display: flex;
+      }
+        .social {
+          font-size: 18px;
+          color: #fff;
+          padding: 0 5px;
+        }
+        .social a:hover {
+          color: #343434;
+        }
+    .texto-principal {
+      background: darkorange;
+    }
+      h1 {
+
+      }
+  .section{
+    background: #000;
+    display: flex;
+  }
+    .articulos {
+      background: burlywood;
+      flex: 2 1 auto;
+      display: flex;
+      flex-flow: row wrap;
+    }
+      .article {
+        background: blue;
+        flex: 1 1 40%;
+      }
+      .navegacion {
+        background: blueviolet;
+        flex: 1 1 100%;
+      }
+    .aside {
+      background: cadetblue;
+      flex: 1 1 auto;
+    }
+  .footer {
+    background: #000;
+    display: flex;
+    justify-content: center;
+  }
+    .pie {
+      background: red;
+      width: 300px;
+    }
+
+    @media all and (max-width: 800px;){
+      .section {
+        flex-direction: column;
+      }
+      .menu{
+        flex-direction: column;
+        height: auto;
+      }
+      .aside {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    @media all and (max-width: 600px){
+      .articulos {
+        flex-direction: column;
+      }
+    }
+
+    @media all and (max-width: 400px) {
+      .aside {
+        flex-direction: column;
+      }
+    }
